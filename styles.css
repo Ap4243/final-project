@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #184513;
+    color: #ffffff;
+}
+
+body.slot-machine-active {
+    background-color: #731a14;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #5ba653;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+nav button:hover {
+    background-color: #498a4b;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.button-grid button, .button-grid .custom-amount {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button-grid button {
+    padding: 10px;
+    background-color: #298f1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-grid button:hover {
+    background-color: #1e7a15;
+}
+
+.custom-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.custom-amount input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.custom-amount button {
+    padding: 10px;
+    background-color: #298f1e;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.custom-amount button:hover {
+    background-color: #1e7a15;
+}
+
+.total-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#total {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#money-image {
+    width: 100px;
+    height: auto;
+}
+
+.currency-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.currency-converter select, .currency-converter button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #298f1e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.currency-converter button {
+    background-color: #5ba653;
+}
+
+.currency-converter button:hover {
+    background-color: #498a4b;
+}
+
+.currency-converter select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #298f1e url('images/dropdown-arrow.png') no-repeat right 10px center;
+    padding-right: 30px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 select {
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #298f1e;
+    border-radius: 5px;
+}
+
+.transaction-history {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.transaction-history h3 {
+    color: #fff;
+}
+
+.transaction-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transaction-history li {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#slot-machine-section {
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#slot-machine {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.reel {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+#slot-machine-section input[type="number"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+#slot-machine-section button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#slot-machine-section button:hover {
+    background-color: #333333;
+}
+
+.volume-controls {
+    margin-top: 20px;
+}
+
+.volume-controls label, .volume-controls input[type="range"], .volume-controls button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.volume-controls input[type="range"] {
+    width: 150px;
+}
